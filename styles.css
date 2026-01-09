@@ -1,0 +1,95 @@
+/*  
+    styles.css 
+    Author: David Martinez 
+    Date:   01/09/2026 
+    Purpose: Styling for the project homepage to create a clean, professional look 
+*/ 
+ 
+/* Reset default margins and padding for consistent layout */ 
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
+ 
+/* Background and Font */ 
+body { 
+    background: linear-gradient(to bottom, #f0f4f8, #d9e2ec); /* Soft light gradient */ 
+    font-family: Arial, Helvetica, sans-serif; /* Web-safe font stack */ 
+    color: #333; 
+    line-height: 1.6; 
+} 
+ 
+/* Header */ 
+header { 
+    background-color: #2c3e50; /* Dark blue-gray */ 
+    color: white; 
+    text-align: center; 
+    padding: 2rem 1rem; 
+    font-size: 2.5rem; 
+    font-weight: bold; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+} 
+ 
+header h1 { 
+    font-size: 2.8rem; 
+} 
+ 
+/* Navigation Menu */ 
+nav ul { 
+    list-style: none; /* Remove bullet points */ 
+    display: flex; /* Horizontal layout */ 
+    justify-content: center; 
+    background-color: #34495e; 
+    padding: 1rem 0; 
+    flex-wrap: wrap; /* Responsive on small screens */ 
+} 
+ 
+nav ul li { 
+    margin: 0 1.5rem; 
+} 
+ 
+nav ul li a { 
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+    padding: 0.5rem 1rem; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+} 
+ 
+nav ul li a:hover { 
+    background-color: #1abc9c; /* Teal hover */ 
+    color: white; 
+    border-radius: 5px; 
+} 
+ 
+/* Main Sections */ 
+main section { 
+    background-color: white; 
+    margin: 2rem auto; 
+    max-width: 900px; 
+    padding: 2rem; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #ddd; 
+} 
+ 
+main section h2 { 
+    color: #2c3e50; 
+    margin-bottom: 1rem; 
+    font-size: 1.8rem; 
+} 
+ 
+/* Footer */ 
+footer { 
+    background-color: #2c3e50; 
+    color: #ecf0f1; 
+    text-align: center; 
+    padding: 1.5rem; 
+    font-size: 0.9rem; 
+    margin-top: 2rem; 
+} 
+ 
+footer p { 
+    margin: 0; 
+} 
