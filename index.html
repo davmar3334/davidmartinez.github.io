@@ -1,50 +1,95 @@
 <!DOCTYPE html> 
-<html lang="en">
-<head>  
-<!-- Metadata --> 
+<html lang="en"> 
+<head> 
    <meta charset="UTF-8"> 
-   <meta name="description" content="Personal portfolio homepage of Your Full Name, showcasing about me, projects, and contact information."> 
-   <meta name="keywords" content="portfolio, HTML, web development, projects, Your Full Name"> 
-   <meta name="author" content="Dave Martinez"> 
    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    
-   <title>Dave Martinez Portfolio</title> 
-</head> 
+   <title>Your Name - Portfolio</title> 
    <link rel="stylesheet" href="styles.css"> 
+</head> 
 <body> 
+ 
    <header> 
-       <h1>Welcome to My Portfolio</h1> 
-        
-       <!-- Navigational menu with internal links --> 
-       <!-- This is the navigation menu linking to sections below --> 
-       <nav> 
-           <ul> 
-               <li><a href="#about">About</a></li> 
-               <li><a href="#projects">Projects</a></li> 
-               <li><a href="#contact">Contact</a></li> 
-           </ul> 
-       </nav> 
+       <h1>Your Name</h1> 
+       <p>Web Developer & Designer</p> 
    </header> 
-    
+ 
+   <nav> 
+       <ul> 
+           <li><a href="#home">Home</a></li> 
+           <li><a href="#about">About</a></li> 
+           <li><a href="#projects">Projects</a></li> 
+           <li><a href="#contact">Contact</a></li> 
+       </ul> 
+   </nav> 
+ 
    <main> 
+       <section id="home"> 
+           <h2>Welcome</h2> 
+           <p>I'm a passionate web developer creating modern, responsive, and user-friendly websites.</p> 
+       </section> 
+ 
        <section id="about"> 
-           <h2>About</h2> 
-           <p>Hello! I'm Dave Martinez, a student learning web development. This is my personal portfolio site built with HTML.</p> 
+           <h2>About Me</h2> 
+           <p>I specialize in HTML5, CSS3, JavaScript, and modern frameworks. Always learning and building.</p> 
        </section> 
-        
+ 
        <section id="projects"> 
-           <h2>Projects</h2> 
-           <p>Here are some of my recent projects. (Add descriptions or links as you build more.)</p> 
+           <h2>My Projects</h2> 
+ 
+           <table> 
+               <caption>Sample Projects Portfolio</caption> 
+ 
+               <colgroup> 
+                   <col class="col-name">      <!-- First column - light background --> 
+                   <col class="col-desc"> 
+                   <col class="col-preview">   <!-- Third column - light background --> 
+               </colgroup> 
+ 
+               <thead> 
+                   <tr> 
+                       <th>Project Name</th> 
+                       <th>Description</th> 
+                       <th>Preview</th> 
+                   </tr> 
+               </thead> 
+ 
+               <tbody> 
+                   <tr> 
+                       <td>Responsive Portfolio Site</td> 
+                       <td>A clean, mobile-first personal portfolio built with semantic HTML5, CSS Grid/Flexbox, and smooth transitions.</td> 
+                       <td> 
+                           <img src="https://via.placeholder.com/180x120/3498db/ffffff?text=Portfolio"  
+                                alt="Responsive Portfolio Preview"> 
+                       </td> 
+                   </tr> 
+                   <tr> 
+                       <td>Weather Dashboard App</td> 
+                       <td>Real-time weather application using a public API, featuring dynamic cards, search history, and responsive design.</td> 
+                       <td> 
+                           <img src="https://via.placeholder.com/180x120/e74c3c/ffffff?text=Weather+App"  
+                                alt="Weather Dashboard Preview"> 
+                       </td> 
+                   </tr> 
+               </tbody> 
+ 
+               <tfoot> 
+                   <tr> 
+                       <td colspan="3">More exciting projects in development — stay tuned!</td> 
+                   </tr> 
+               </tfoot> 
+           </table> 
        </section> 
-        
+ 
        <section id="contact"> 
-           <h2>Contact</h2> 
-           <p>You can email me at davmar3345@students.ecpi.edu.</p> 
+           <h2>Get in Touch</h2> 
+           <p>Email: your.email@example.com</p> 
+           <p>GitHub: github.com/yourusername</p> 
        </section> 
    </main> 
-    
+ 
    <footer> 
-       <p>&copy; 2025 Dave Martinez. All rights reserved.</p> 
+       <p>&copy; 2026 Dave Martinez. All rights reserved.</p> 
    </footer> 
+ 
 </body> 
-</html>  
+</html> 
