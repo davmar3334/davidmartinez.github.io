@@ -2,94 +2,149 @@
     styles.css 
     Author: David Martinez 
     Date:   01/09/2026 
-    Purpose: Styling for the project homepage to create a clean, professional look 
+    Purpose: Incorperating advanced HTML5 and CSS3 features.
 */ 
  
-/* Reset default margins and padding for consistent layout */ 
-* { 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
+/* ============================================== 
+  General Reset & Base Styles============================================== */* { 
+   margin: 0; 
+   padding: 0; 
+   box-sizing: border-box; 
 } 
  
-/* Background and Font */ 
 body { 
-    background: linear-gradient(to bottom, #f0f4f8, #d9e2ec); /* Soft light gradient */ 
-    font-family: Arial, Helvetica, sans-serif; /* Web-safe font stack */ 
-    color: #333; 
-    line-height: 1.6; 
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+   line-height: 1.6; 
+   color: #333; 
+   background-color: #f9f9f9; 
 } 
  
-/* Header */ 
+/* ============================================== 
+  Header & Navigation 
+============================================== */ 
 header { 
-    background-color: #2c3e50; /* Dark blue-gray */ 
-    color: white; 
-    text-align: center; 
-    padding: 2rem 1rem; 
-    font-size: 2.5rem; 
-    font-weight: bold; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+   background: linear-gradient(135deg, #2c3e50, #3498db); 
+   color: white; 
+   text-align: center; 
+   padding: 3rem 1rem; 
 } 
  
-header h1 { 
-    font-size: 2.8rem; 
-} 
- 
-/* Navigation Menu */ 
 nav ul { 
-    list-style: none; /* Remove bullet points */ 
-    display: flex; /* Horizontal layout */ 
-    justify-content: center; 
-    background-color: #34495e; 
-    padding: 1rem 0; 
-    flex-wrap: wrap; /* Responsive on small screens */ 
+   list-style: none; 
+   display: flex; 
+   justify-content: center; 
+   background: #34495e; 
+   padding: 1rem 0; 
 } 
  
 nav ul li { 
-    margin: 0 1.5rem; 
+   margin: 0 1.5rem; 
 } 
  
-nav ul li a { 
-    color: white; 
-    text-decoration: none; 
-    font-weight: bold; 
-    padding: 0.5rem 1rem; 
-    transition: background-color 0.3s ease, color 0.3s ease; 
+nav a { 
+   color: white; 
+   text-decoration: none; 
+   font-weight: bold; 
+   padding: 0.6rem 1.2rem; 
+   border-radius: 6px; 
+   transition: background-color 0.4s ease, color 0.4s ease;   /* Task: nav hover transition */ 
 } 
  
-nav ul li a:hover { 
-    background-color: #1abc9c; /* Teal hover */ 
-    color: white; 
-    border-radius: 5px; 
+nav a:hover { 
+   background-color: #1abc9c; 
+   color: white; 
 } 
  
-/* Main Sections */ 
+/* ============================================== 
+  Main Content Sections – Zoom on Hover 
+============================================== */ 
 main section { 
-    background-color: white; 
-    margin: 2rem auto; 
-    max-width: 900px; 
-    padding: 2rem; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-    border: 1px solid #ddd; 
+   max-width: 1100px; 
+   margin: 2.5rem auto; 
+   padding: 2rem; 
+   background: white; 
+   border-radius: 12px; 
+   box-shadow: 0 4px 15px rgba(0,0,0,0.08); 
+   transition: transform 0.4s ease, box-shadow 0.4s ease;   /* Task: section hover zoom */ 
 } 
  
-main section h2 { 
-    color: #2c3e50; 
-    margin-bottom: 1rem; 
-    font-size: 1.8rem; 
+main section:hover { 
+   transform: scale(1.02); 
+   box-shadow: 0 12px 30px rgba(0,0,0,0.15); 
 } 
  
-/* Footer */ 
+h2 { 
+   color: #2c3e50; 
+   margin-bottom: 1.2rem; 
+   border-bottom: 3px solid #3498db; 
+   padding-bottom: 0.6rem; 
+} 
+ 
+/* ============================================== 
+  Projects Table Styling 
+============================================== */ 
+#projects table { 
+   width: 100%; 
+   border-collapse: collapse; 
+   margin-top: 2rem; 
+   font-size: 1.05rem; 
+   background: white; 
+   box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+} 
+ 
+#projects caption { 
+   font-size: 1.5rem; 
+   font-weight: bold; 
+   padding: 1rem; 
+   background: #ecf0f1; 
+   color: #2c3e50; 
+} 
+ 
+#projects thead th { 
+   background-color: #34495e; 
+   color: white; 
+   padding: 1rem; 
+   text-align: left; 
+} 
+ 
+#projects tbody td { 
+   padding: 1.2rem; 
+   border-bottom: 1px solid #e0e0e0; 
+   vertical-align: top; 
+} 
+ 
+#projects tbody tr:hover { 
+   background-color: #f8f9fa; 
+} 
+ 
+#projects tfoot td { 
+   text-align: center; 
+   padding: 1rem; 
+   font-style: italic; 
+   background: #ecf0f1; 
+   color: #7f8c8d; 
+} 
+ 
+/* Colored columns via colgroup */ 
+.col-name, 
+.col-preview { 
+   background-color: #f0f8ff;   /* Light blue for first & third columns */ 
+} 
+ 
+/* Images in table */ 
+#projects img { 
+   max-width: 100%; 
+   border-radius: 8px; 
+   box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+} 
+ 
+/* ============================================== 
+  Footer 
+============================================== */ 
 footer { 
-    background-color: #2c3e50; 
-    color: #ecf0f1; 
-    text-align: center; 
-    padding: 1.5rem; 
-    font-size: 0.9rem; 
-    margin-top: 2rem; 
-} 
- 
-footer p { 
-    margin: 0; 
+   text-align: center; 
+   padding: 1.5rem; 
+   background: #2c3e50; 
+   color: white; 
+   margin-top: 3rem; 
 } 
